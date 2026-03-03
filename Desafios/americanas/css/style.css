@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    width: 100%vh;
+}
+
+#topo{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+#topo > a{
+    text-decoration: none;
+    color: white;
+}
+#topo > a:hover{
+    text-decoration: underline;
+}
+.destaque{
+    background-color: orange;
+}
