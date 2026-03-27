@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício posicionamento</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: #76C3FA;
+        }
+        #principal{
+            width: 700px;
+            background-color: white;
+            padding: 0.8em;
+            margin: 1em auto;
+            position: relative;
+        }
+        #top{
+            padding: 10px;
+            background-color: #0886df;
+            padding-bottom: 1px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            margin: 6px;
+            padding: 10px;
+        }
+        a:hover{
+            background-color: white;
+            color:#0886df;
+            transition-duration: 0.6s;
+        }
+        .chat{
+            position: fixed;
+            bottom: 10px;
+            left: 7px;
+
+        }
+        .novo{
+            width: 100px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+        .menu{
+            position: absolute;
+            left:170px;
+            top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <img class="novo" src="/recursos/img/novo.png" alt="">
+            <div id="top">
+                <img src="/recursos/img/logo-magalu.png" width="100px" alt="">
+                <div class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Produtos</a>
+                    <a href="#">Meus pedidos</a>
+                    <a href="#">Contato</a>
+                </div>
+            </div>
+        <div id="conteudo">
+            <h1>Título do site</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, sint animi facilis suscipit porro mollitia corrupti modi in corporis earum qui eos fuga. Officiis porro perferendis voluptatum reiciendis ipsa id?
+            </p>
+            <h1>Título do site</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, sint animi facilis suscipit porro mollitia corrupti modi in corporis earum qui eos fuga. Officiis porro perferendis voluptatum reiciendis ipsa id?
+            </p>
+            <h1>Título do site</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, sint animi facilis suscipit porro mollitia corrupti modi in corporis earum qui eos fuga. Officiis porro perferendis voluptatum reiciendis ipsa id?
+            </p>
+            <div class="chat">
+        <img src="/recursos/img/logo-f1.png" width="150px">
+    </div>
+        </div>
+    </div>
+    <div class="chat">
+        <img src="/recursos/img/logo-f1.png" width="150px">
+    </div>
+</body>
+</html>

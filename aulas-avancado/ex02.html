@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionemento</title>
+    <style>
+        body{
+            background-color: purple;
+        }
+        #container {
+            width: 700px;
+            background-color: white;
+            margin: 10px auto;
+            padding: 8px;
+            position: relative;
+        }
+        .borda{
+            border: 1px solid red;
+        }
+        .estatica{ /*Fluxo normal*/
+            position: static;
+        }
+        .relativa{
+            position: relative;
+            /* margin-top: 80px ; */
+
+            /* top: 30px;
+            left: 20px;  */
+            /* right: 30px;
+            bottom: 50px; */
+        }
+        .absoluta{
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            width: 500px;
+            margin: 0px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+         <h1 class="borda">Posição absoluta</h1>
+        <p class="borda absoluta" style="color: lightpink;">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime repudiandae sunt odio adipisci dicta ducimus est voluptates, sapiente molestiae, magnam suscipit magni cumque fuga inventore, sint repellat necessitatibus. Deleniti, aspernatur!
+        </p>
+        <hr>
+         <h1 class="borda">Posição relativa</h1>
+        <p class="borda relativa" style="background-color: lightgreen;">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime repudiandae sunt odio adipisci dicta ducimus est voluptates, sapiente molestiae, magnam suscipit magni cumque fuga inventore, sint repellat necessitatibus. Deleniti, aspernatur!
+        </p>
+         <p class="borda estatica">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime repudiandae sunt odio adipisci dicta ducimus est voluptates, sapiente molestiae, magnam suscipit magni cumque fuga inventore, sint repellat necessitatibus. Deleniti, aspernatur!
+        </p>
+
+        <h1 class="borda estatica">Fluxo normal</h1>
+        <p class="borda estatica">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime repudiandae sunt odio adipisci dicta ducimus est voluptates, sapiente molestiae, magnam suscipit magni cumque fuga inventore, sint repellat necessitatibus. Deleniti, aspernatur!
+        </p>
+    
+    </div>
+
+</body>
+</html>
