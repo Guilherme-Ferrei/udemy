@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#menu ul{
+    list-style-type: none;
+    padding: 0.4em;
+    background-color: #24252a;
+}
+#menu ul::after{
+    content: " ";
+    clear: both;
+    display: table;
+}
+#menu li a{
+    display: block;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    color: white;
+    float: right;
+    margin: 0 0.5em;
+   
+}
+#menu li a:hover{
+    background-color: #0582ac92;
+     border-radius: 43px;
+
+}
+#menu li a:active{
+    background-color: #885000;
+}
+
+ #home #menu li.home a,
+ #carrinho #menu li.carrinho a,
+ #contato #menu li.contato a,
+ #produtos #menu li.produtos a{
+    padding-left: 1.5em;
+    color: white;
+    background: purple url(/recursos/img/seta.png) no-repeat 0.5em center;
+    border-radius: 43px;
+
+}

@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+}
+#header{
+    background-color: #c5e3fe;
+    border-bottom: 1px solid black;
+}
+.container{
+    width: 1145px;
+    margin: 0 auto;
+}
