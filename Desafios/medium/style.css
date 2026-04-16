@@ -1,11 +1,157 @@
-*{
-    margin: 0px;
+body,html{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #header{
+    z-index: 1;
     background-color: #c5e3fe;
     border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .container{
     width: 1145px;
     margin: 0 auto;
+    padding: 1.4rem 0;
+}
+
+ ul#menu{
+    list-style-type: none;
+    width: 600px;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+ul#menu li a{
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    float: left;
+}
+ul#menu li a:hover{
+    color: #4c799f;
+}
+
+ul#menu li.destaque a{
+    color: white;
+    background-color: black;
+    border-radius: 1.2rem;
+}
+ul#menu li.destaque a:hover{
+    color: #4c799f;
+}
+
+/* Área conteudo */
+#destaque{
+    background-color: #c5e3fe;
+    border-bottom: 1px solid black;
+    margin-top: 4.7rem;
+}
+#area-destaque{
+    width: 55%;
+}
+#destaque button{
+    position: relative;
+    left: 30%;
+    display: block;
+    margin-top: 1.5rem;
+    box-shadow: 1px 4px 6px  rgba(0, 0, 0, 0.53);
+    border-radius: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid black;
+    font-size: 0.8rem;
+    background-color: white;
+}
+#destaque button:hover{
+    background-color:rgba(211, 211, 211, 0.745);
+} 
+.fundo-destaque{
+    background: url(../medium/img/fundo-topo.png) no-repeat right bottom;
+    background-size: 22rem auto;
+}
+.titulo-tendencia{
+    background: url(img/icone-tendencia.png) no-repeat left / contain;
+    padding: 0.2rem 0rem 0.2rem 2rem;
+}
+#tendencia{
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+
+}
+
+#tendencia::after{
+    content: " ";
+    display: table;
+    clear: both;
+
+}
+.item-tendencia{
+    width: 25%;
+    padding-left: 7%;
+    position: relative;
+    float: left;
+}
+.numero{
+    font-size: 3rem;
+    font-weight: bold;
+    color: lightgray;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icone {
+    padding-left: 1.5rem;
+}
+.imagem1 {
+    background: url(img/icone1.png) no-repeat left/ contain;
+}
+
+.imagem2 {
+    background: url(img/icone2.png) no-repeat left/ contain;
+}
+.imagem3 {
+    background: url(img/icone3.png) no-repeat left/ contain;
+}
+.imagem4 {
+    background: url(img/icone4.png) no-repeat left/ contain;
+}
+
+.imagem5 {
+    background: url(img/icone5.png) no-repeat left/ contain;
+}
+.imagem6 {
+    background: url(img/icone6.png) no-repeat left/ contain;
+}
+
+#rodape{
+    background-color:#c5e3fe;
+    border-top: 1px solid black;
+}
+
+
+
+/* *******************
+TIPOGRAFIA 
+*/
+h1{
+    font-size: 4rem;
+    font-weight: 100;
+    margin: 0;
+    letter-spacing: -0.1rem;
+}
+h2{
+    font-size: 0.8rem;
+    text-transform:uppercase;
+}
+h3,h4{
+    margin: 0.2rem;
+}
+h4{
+    font-weight: 100;
 }
